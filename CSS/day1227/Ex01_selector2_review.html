@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex01_selector2_review</title>
+    <style>
+
+
+        #body{
+            width: 1000px;
+            margin: auto;
+        }
+
+        h1{
+            color: purple;
+            border: 5px solid lightcoral;
+            background-color: lightgoldenrodyellow;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            height: 50px;
+         }     
+        h1 + p{
+            color: salmon;
+            border: 5px solid lightcoral;
+            background-color: lightgoldenrodyellow;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        div{
+            border: 2px solid red;
+            border: 5px solid lightcoral;
+            background-color: lightgoldenrodyellow;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        div > p{ 
+            background-color: blueviolet;
+            border: 5px solid lightcoral;
+            background-color: lightgoldenrodyellow;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        span{
+            color: yellow;            
+            background-color: lightgoldenrodyellow;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        span p{
+            background-color: chocolate;
+        }
+
+        div ~ p{
+            color: magenta;
+            border: 5px solid lightcoral;
+            background-color: lightgoldenrodyellow;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+    </style>
+</head>
+<body id="body">
+    
+    <h1>Dear my love</h1>
+    <p> div 태그 외부의 p태그 </p>
+    <div>
+    <p> div 태그 내부의 p태그는 선택이 됩니다. </p>
+    <span>
+        <p>이 태그는 span태그로 감싸져 있는 p태그입니다.
+            <br>
+            div 태그 바로 밑이 아니기 때문에 자식선택자로는 선택이 안 됩니다.
+        </p>
+    </span>
+    </div>
+    <p> div 태그 외부의 p태그 </p>   
+</body>
+</html>

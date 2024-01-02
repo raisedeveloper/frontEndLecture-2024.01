@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="reset.css"/>
+    <style>
+        h1{
+            font-size: 150%;
+            font-weight: bolder;
+        }
+        .div1 ul{
+            background-color: wheat;
+            width: 150px;
+        }
+
+        .div1 ul li a {
+            text-decoration: none;
+            font-weight: bolder;
+            color: black;
+            padding: 10px;
+            display: block;
+        }
+        
+        /* .div1 ul li a:hover{
+            background-color: burlywood;
+            color: white;
+        } */
+
+        /* not */
+
+        .div1 ul li a:hover:not(.home){
+            background-color: burlywood;
+            color: white;
+        }
+
+        /* .div1 ul li a:hover:not(.home) {
+            background-color: black;
+            color: none;
+          } */
+
+        li a.home{
+            background-color: coral;
+            color: white;
+        }
+
+        .div2 ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            background-color: wheat;
+            overflow: hidden;   /*float로 인해 데이터가 넘친경우에 대한 속성*/
+        }
+
+            .div2 li {
+                float: left;
+            }
+
+            .div2 ul ul{
+                float: right;
+            }
+
+        .div2 li a {
+            display: block;
+            width: 70px;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            background-color: wheat;
+            font-weight: bolder;
+            color: black;
+        }
+
+        .div2 li a:hover{
+            background-color: burlywood;
+            color: white;
+        }
+
+        .div2 li a.home{
+            background-color: coral;
+            color: white;
+        }
+
+        .dropdown-div{
+            display: none;
+            width: 80px;
+            position: absolute;
+        }
+
+        .dropdown:hover .dropdown-div{
+            display: block;
+        }
+
+        .webdrop-div{
+            display: none;
+            width: 80px;
+            position: absolute;
+        }
+
+        .webdrop:hover .webdrop-div{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> li 와 a 태그를  사용하여 만드는 리스트 메뉴</h1>
+    <div class="div1">
+        <ul>
+            <li><a href="#" class="home">HOME</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">사이트맵</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="div2">
+        <ul>
+            <li><a href="#" class="home">HOME</a></li>
+            <li>
+                <div class="dropdown"><a href="#">뉴스</a>
+                    <div class="dropdown-div">
+                        <a href="#">A일보</a>
+                        <a href="#">B일보</a>
+                        <a href="#">C일보</a>
+                    </div>
+                </div>      
+            </li>
+            <li>
+                <div class="webdrop"><a href="#">웹툰</a>
+                    <div class="webdrop-div">
+                    <a href="#>">낢이사는이야기</a>
+                    <a href="#>">마음의 소리</a>
+                    <a href="#>">신의 탑</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">부동산</a></li>
+            <li><a href="#">쇼핑</a></li>
+            <li><a href="#">날씨</a></li>
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+        </ul>
+    </div>
+</body>
+</html>

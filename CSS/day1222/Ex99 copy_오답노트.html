@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex99.html</title>
+
+    <style>
+        #main{
+            width: 450px;
+            margin: auto;
+            padding: 10px
+        }
+        h1{
+            margin: auto;
+            cursor: pointer;
+        }
+        #top{
+            height: 60px;
+            margin-bottom: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+        #middle{
+            border: 1px solid;
+            border-color: white;
+            margin-bottom: 0px;
+            padding: 60px 20px;
+        }
+        #bottom{
+            margin-top: 60px;
+        }
+        #inputDiv{
+                        width: 350px;
+            margin: auto;
+            margin-bottom: 100px;
+        }
+        #btnDiv{
+            width: 350px;
+            margin: auto;
+            margin-bottom: 50px;
+            margin-top: 60px;
+        }
+        .inputTag{
+            width: 450px;
+            padding: 0px;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            height: 50px;
+            font-size: large;
+            outline: none;
+            margin: auto;
+        }
+        .inputTag:focus{
+            outline: none;
+            margin: auto;
+        }
+        .inputTag::placeholder{
+            font-size: large;
+            margin: auto;
+        }
+        #loginBtn{
+            background-color: rgb(252, 8, 61);
+            color: white;
+            width: 450px;
+            padding: 20px;
+            font-size: large;
+            border: 0px;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: auto;
+        }
+        .hr-sect {
+            display: flex;
+            flex-basis: 100%;
+            align-items: center;
+            color: rgba(0, 0, 0, 0.35);
+            font-size: 12px;
+            margin: auto;
+        }
+        .hr-sect::before,
+        .hr-sect::after {
+            content: "";
+            flex-grow: 1;
+            background: rgba(0, 0, 0, 0.35);
+            height: 1px;
+            font-size: 0px;
+            line-height: 0px;
+            margin: 0px 5px; 
+            width: 0px;
+            margin-top: 30px;
+            margin: auto;
+        }
+        #joinDiv{
+            width: 450px;
+            margin: auto;
+        }
+        .joinTag{
+            text-decoration: none;
+            color: black;
+            margin-top: 20px;
+        }
+        .imgBanner{
+            width: 60%;
+            margin: auto;
+            display: block;
+        }
+        #snsBtn{
+            margin: auto;
+            width: 450px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="top" >
+            <img src="img/11st.svg"/>        
+        </div>
+        <div id="middle">
+            <div id="inputDiv">
+                <input type="text" class="inputTag" placeholder="아이디 입력"/>
+                <br/>
+                <input type="password" class="inputTag" placeholder="비밀번호 8자~20자"/>
+            </div>
+            <div id="btnDiv">
+                <button type="button" id="loginBtn">로그인</button>
+                <div class="hr-sect">또는 sns 아이디로 로그인</div>
+                </div>
+            <div id="snsBtn">
+                <a class="snsBtn">
+                    <img src= "img/sns-kakao.svg">
+                    <img src= "img/sns-naver.svg">
+                    <img src= "img/sns-phone.svg">
+                    <img src= "img/sns-apple.svg">
+                    <img src= "img/sns-payco.svg">
+                    <img src= "img/sns-facebook.svg">
+                </a>
+            </div>
+            <div id="joinDiv"> 
+                <a href="#" class="joinTag">아이디찾기&nbsp;&nbsp;&nbsp;</a>
+                <a href="#" class="joinTag padding100">비밀번호찾기&nbsp;&nbsp;&nbsp;</a>
+                <a href="#" class="joinTag">비회원 주문조회&nbsp;&nbsp;&nbsp;</a>
+                <a href="#" class="joinTag">회원가입&nbsp;&nbsp;&nbsp;</a>
+            </div>
+        <div id="bottom">
+            <div class imgBanner="img/banner.png">
+                <img src="img/banner.png">
+            </div>
+        </div>
+</body>
+</html>

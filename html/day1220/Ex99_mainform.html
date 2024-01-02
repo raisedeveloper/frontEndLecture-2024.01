@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex99_mainform.html</title>
+</head>
+<body>
+    <div id="container">
+        <form>
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <ol>
+                <li>
+            <label for="userid"> 아이디 </label>
+            <input type="text" id="userid" size="20" required/><br/>
+                </li>
+                <li>
+
+            <label>  비밀번호 <input type="password" id="password1" size="20" required></label><br/>
+        </li>
+        <li>
+            <label>  비밀번호 확인 <input type="password" id="password2" size="20" required></label><br/>
+        </li>
+        <li>
+            <label>  회원 등급 <input type="text" value="준회원" readonly size="20"></label><br/>   
+        </li>
+    </ol> 
+        </fieldset>
+        </form>
+
+    <div id="container">
+        <form>
+        <fieldset>
+                <legend>개인 정보</legend>
+        <ol>
+                <li>
+                    <label for="username"> 이름 </label>
+                    <input pattern="var hName/^[가-힣+$/;]" type="text" id="user_id" size="20" placeholder="5자미만 공백없이" required></label><br/>
+                </li>
+
+                <li>
+                    <label>  메일 주소 <input type="email" id="mail" placeholder="abcd@domain.com" required></label><br/>                      
+                </li>
+
+                <li>        
+                    <label>  연락처 <input type="text" pattern="(010|011)-\d{3,4}-\d{4}"><br/></label>
+                </li>
+
+                <li>      
+                    <label>  생일 <input type="date"></label><br/>
+                </li>
+        </ol>
+            
+    </div>
+    
+    <div id="container">
+        <form>
+        <fieldset>
+                <legend>코딩숙련도(상,중,하)</legend>
+                    <label for="temp"></label>
+        </form>
+        <ol>
+        <li>
+                <input type="range" id="temp" name="temp" list="markers" />
+        </ol>
+        </li> 
+<datalist id="markers">
+  <option value="20"></option>
+  <option value="50"></option>
+  <option value="80"></option>
+</datalist>
+        </fieldset>
+    </div>
+    </form>
+    <form>
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <ol>
+                <li>
+                    <label for="userid">아이디</label>
+                    <input type="text" id="userid" required />
+                </li>
+                <li>
+                    <label for="pwd1">비밀번호</label>
+                    <input type="password" id="pwd1" required />
+                </li>
+                <li>
+                    <label for="pwd2">비밀번호 확인</label>
+                    <input type="password" id="pwd2" required />
+                </li>
+                <li>
+                    <label for="lvl">회원 등급</label>
+                    <input type="text" id="lvl" value="준회원" readonly/>
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ol>
+                <li>
+                    <!-- ㄱ-힣 : 한글
+                         a - z : 소문자 알파벳
+                         A - Z : 대문자 알파벳
+                         a - Z : 알파벳
+                         0 - 9 : 숫자
+                    -->
+                    <label for="username">이름</label>
+                    <input type="text" id="username" placeholder="5자미만 공백없이"
+                        pattern="[ㄱ-힣]+" maxlength="5"/>
+                    required />
+                </li>
+                <li>
+                    <label for="email">메일주소</label>
+                    <input type="email" id="email" placeholder="abcd@domain.com" required />
+                </li>
+                <li>
+                    <label for="tel">연락처</label>
+                    <input type="text" id="tel" pattern="(010|011)-\d{3,4}-\d{4}" required />
+                </li>
+                <li>
+                    <label for="date">생일</label>
+                    <input type="date" id="date" />
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>코딩 숙련도(상,중,하)</legend>
+            <ol>
+                <il>
+                    <!-- range 기본 범위는 0-~100-->
+                    <input type="range" list="skillstep"
+                         min="1" max="5" step="1"/>
+                        
+                    <!-- 눈금을 보이게 하는 태그 : datalist -->
+                    <datalist id="skillstep">
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </datalist>                
+                </il>
+            </ol>
+        </fieldset>
+        <fieldset>
+            
+        </fieldset>
+    </form>
+</body>
+</html>

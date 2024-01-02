@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex99_simpleform.html</title>
+</head>
+<body>
+    <form action="#"> 
+        <fieldset> <!-- 입력값을 감싸는 태그(꾸미는)-->
+        <legend>회원 가입</legend>
+        1. 이름 <input type="text" placeholder="이름"/> <br/>
+        2. 성별 
+        <!--
+            label : input 태그가 아닌 다른 요소를 선택하더라도
+                    마치 input 태그가 선택된 것처럼 도와주는 태그
+            <label for="값">
+            <input id="값">
+            label for="값" 과 input id="값"이 같아야 합니다. / 다르면 무관
+        -->
+               <input type="radio" id="m" name="g"/> <label for="m"> 남자</label>
+               <label for="gender1"></label>
+               <input type="radio" id="w" name="g"/><label for="w">여자</label>
+               <label for="gender2"></label> <br/>
+
+               <form action="#">
+                <fieldset> <!-- 입력값을 감싸는 태그(꾸미는)-->
+                    <legend>회원가입</legend>
+                    1. 이름 <input type="text" placeholder="이름"/> <br/>
+                    2. 성별 <input type="radio" /> 남자
+                </fieldset>
+        
+            </form>
+            <form action="#">
+                <fieldset> <!-- 입력값을 감싸는 태그(꾸미는)-->
+                    <legend>회원가입</legend>
+                    <ol>
+                        <li>
+                            이름 <input type="text" placeholder="이름"/>
+                        </li>
+                        <li>
+                            성별 
+                            <!--
+                                label : input 태그가 아닌 다른 요소를 선택하더라도
+                                        마치 input태그가 선택된것처럼 도와주는 태그
+                                <label for="값">
+                                <input id="값">
+                                label for="값" 과 input id="값" 이 같아야합니다. / 다르면 무관
+        
+                                type="radio" 의 그룹설정을 돕는 속성 :  name속성
+                            -->
+                            <input type="radio" id="m" name="g" /><label for="m">남자</label>
+                            <input type="radio" id="w" name="g" /><label for="w">여자</label>
+                        </li>
+                    </ol>
+                </fieldset>
+        
+            </form>
+
+        3. 직업 <label for="path"></label>
+                <select id="path">
+                    <option value="programmer">프로그래머</option>
+                    <option value="student">학생</option>
+                    <option value="teacher">선생</option>
+                </select><br/>
+
+                
+        4. 취미 <label><input type="checkbox"> 잠자기</label>
+                <label><input type="checkbox"> 먹기</label>
+                <label><input type="checkbox"> 숨쉬기</label>
+                <label><input type="checkbox"> 멍때리기</label><br/>
+        5. 애인 <input type="radio"  name="gender" id="gender1"/>
+        <label for="gender1"> 남자</label>
+        <input type="radio" name="gender"  id="gender2" />
+        <label for="gender2">여자</label> <br/> 
+        6. <input type="submit" value="확인"> <br/>
+        7. <textarea aria-colspan="10" aria-rowspan="8"></textarea><br/>
+    </fieldset>
+    </form>
+</body>
+<hr/>
+</body>
+</html>
+
+<!--
+    <form action="#"> 
+        <fieldset>  입력값을 감싸는 태그(꾸미는)
+            <legend>회원 가입</legend>
+            1. 이름 <input type="text" placeholder="이름"/> <br/>
+
+
+-->

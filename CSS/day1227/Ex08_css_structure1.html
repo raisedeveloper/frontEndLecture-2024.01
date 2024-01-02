@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex08_css_structural</title>
+    <style>
+
+        /* 
+            구조 가상 클래스
+                계층 구조에서 특정 위치를 선택하기 위한 가상 클래스
+                * 선택자 : 자식, 자손, 동위(형제)
+                >> 만약 맨 앞, 내 앞, 2nd, 3rd, last .... 선택 방법에 따라 한계 존재
+
+                :first-child        : 모든 자식 요소(부모가 있는) 중 맨 앞에 있는 요소
+                :last-child         : 모든 자식 요소(부모가 있는) 중 맨 뒤에 있는 요소
+                :nth-child()        : 모든 자식 요소(부모가 있는) 중 n번째에 있는 요소
+                                      ( ) 선택하고자 하는 대상의 숫자. 0부터시작. n이라는 단어 허용
+                :nth-last-child()   : 모든 자식 요소(부모가 있는) 중 뒤에서 n번째에 있는 요소
+
+                :first-of-type      : 모든 자식 요소 중 첫번째로 등장하는 "특정 요소"
+                :last-of-type       : 모든 자식 요소 중 마지막에 등장하는 특정 요소
+                :nth-of-type()      : 모든 자식 요소 중 n번째로 등장하는 특정 요소
+                :nth-last-of-type() : 모든 자식 요소 중 뒤에서 n번째로 등장하는 특정 요소
+        */
+
+        .test1{
+            border: 2px solid black;
+        }
+        .test2{
+            border: 2px solid salmon;
+        }
+        .test3{
+            border: 2px solid greenyellow;
+        }
+        .test2 p:first-child{
+            color: red;
+            font-weight: bold;
+        }
+        .test3 p:last-child{
+            color: blue;
+            font-weight: bold;
+        }
+        .test4{
+            border: 2px solid turquoise;
+        }
+        /* n 은 0부터 시작한다고 생각할 것 */
+        .test4 p{
+            color: tomato;
+            font-weight: bold;
+        }
+        .test4 p:nth-child(2n){
+            color: hotpink;
+            font-weight: bold;
+        }
+        .test4 p:nth-child(2n+1){
+            color: royalblue;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> 구조 가상 클래스 연습 </h1>
+    <div class="test1">
+        <div class="test2">
+            <p>이 p 태그는 div태그의 child입니다.</p>
+            <p>이 p 태그는 div태그의 child입니다.</p>
+            <p>이 p 태그는 div태그의 child입니다.</p>
+        </div>  
+        <div class="test3">
+            <p>이 p 태그는 div태그의 child입니다.</p>
+            <p>이 p 태그는 div태그의 child입니다.</p>
+            <p>이 p 태그는 div태그의 child입니다.</p>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="test4">
+        <p>이 p 태그는 div태그의 1번째 child입니다. 뒤에서 6번째</p>
+        <p>이 p 태그는 div태그의 2번째 child입니다. 뒤에서 5번째</p>
+        <p>이 p 태그는 div태그의 3번째 child입니다. 뒤에서 4번째</p>
+        <p>이 p 태그는 div태그의 4번째 child입니다. 뒤에서 3번째</p>
+        <p>이 p 태그는 div태그의 5번째 child입니다. 뒤에서 2번째</p>
+        <p>이 p 태그는 div태그의 6번째 child입니다. 뒤에서 1번째</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            border: 1px solid red;
+            margin: 0 auto;
+            width: 1000px;
+            padding: 20px;
+        }
+
+        #header{
+            position: static;
+            box-sizing: border-box;
+            /* list-style: none; */
+            width: 95%;
+            height: 160px;
+            background-color: rgb(152, 223, 85);
+            display: inline-block;
+            padding: 20px;
+            margin: 20px 20px;
+            border: 1px solid none;
+        }
+
+        .article{
+            width: 62%;
+            margin-right: 40px;
+            margin: 20px 20px;
+            padding: 20px;
+            border: 1px solid red;
+
+        }
+        .gisa1{
+            position: relative;
+            width: 62%;
+            float: left;
+            margin: 20px;
+            margin-right: 400px;
+            background-color: rgb(254, 253, 2); 
+        }
+
+        .gisa2{
+            width: 62%;
+            top: 20px;
+            margin: 20px 20px;
+            padding: 20px;
+        }
+        
+        #rsb{
+            width: 230px;
+            height: 200px;
+            float: right;
+            padding: 10px 10px 0px 10px;
+            border: 1px solid rgb(255, 194, 221);
+            clear: left;
+        }
+        #ft{
+            width: 100%;
+            height: 600px;
+            border: 1px solid rgb(255, 255, 205);
+        }
+        #t01{
+            background-color: rgb(23, 118, 182);
+        }
+
+        .odd{
+            background-color: rgb(151, 218, 218);
+        }
+
+        .even{
+            background-color: rgb(225, 253, 254);
+
+
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <h1> ONLINE SSAFY </h1>
+            <nav>
+                <ul style="list-style-type: none; padding: 0px">
+                    <li>메뉴1</li>
+                    <li>메뉴2</li>
+                    <li>메뉴3</li>
+                    <li>메뉴4</li>
+                </ul>
+            </nav>
+
+
+        </header>
+        <section>
+            <article id="article">
+                <h1>&nbsp;&nbsp;&nbsp;기사 1</h1>
+                <div class="gisa1">
+                    <p>
+                        재산권의 행사는 공공복리에 적합하도록 하여야 한다. 정부는 회계연도마다 
+                        예산안을 편성하여 회계연도 개시 90일전까지 국회에 제출하고, 국회는 회계연도 
+                        개시 30일전까지 이를 의결하여아 한다. 
+                    </p>
+                    <p>
+                        대통령의 임기가 만료되는 때에는 임기만료 70일 내지 40일전에 후임자를 선거한다. 
+                        제2항과 제3항의 처분에 대하여는 법원에 제소할 수 없다. 언론·출판에 대한 허가나 
+                        검열과 집회·결사에 대한 허가는 인정되지 아니한다.
+                    </p>
+                </div>
+            </article> 
+            <article>
+                <h1>&nbsp;&nbsp;&nbsp;기사 2</h1>
+                <table id="t01">
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                    </tr>
+                    <tr>
+                        <td class="odd">1</td>
+                        <td class="odd">이 헌법시행 당시의 대법원장과 대법원판사가...</td>
+                        <td class="odd">강감찬</td>
+                    </tr>
+                    <tr>
+                        <td class="even">2</td>
+                        <td class="even">대한민국은 국제평화의 유지...</td>
+                        <td class="even">장영실</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">3</td>
+                        <td class="odd">정당은 법률이 정하는 바에...</td>
+                        <td class="odd">안중근</td>
+                    </tr>
+                    <tr>
+                        <td class="even">4</td>
+                        <td class="even">공공필요에 의한 재산권의 수용...</td>
+                        <td class="even">김두한</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">5</td>
+                        <td class="odd">국회의원은 그 지위를 남용하여 국가...</td>
+                        <td class="odd">계백</td>
+                    </tr>
+                    <tr>
+                        <td class="even">6</td>
+                        <td class="even">정기회의 회기는 100일을, 초과할 수 없다...</td>
+                        <td class="even">최무선</td>
+                    </tr>
+                </table>
+                
+            </article>
+        </section>
+        
+        <aside id="rsb">
+            <h1>SIDEBAR</h1>
+            <p> 모든 국민은 근로의 의무를 진다. 국가는 근로의 의무의 내용과 조건을 민주주의원치겡 따라 법률로 정한다.</p>
+        </aside>
+        <footer id="ft">
+            <h1>Footer</h1>
+            <p>이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다.</p>
+        </footer>
+    </div>
+</body>
+</html>

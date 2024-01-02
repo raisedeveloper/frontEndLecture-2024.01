@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #main{
+            /* border: 1px solid black; */
+            width: 500px;
+            margin: auto;
+            padding: 10px
+        }
+        h1{
+            text-align: center;
+        }
+        #top{
+            /* border: 1px solid green; */
+            margin-bottom: 10px;
+        }
+
+        #middle{
+            border: 1px solid gray;
+            margin-bottom: 10px;
+            padding: 50px 20px;
+        }
+
+        #bottom{
+            border: 1px solid green;
+        }
+
+        #inputDiv{
+            /* border: 1px solid blue; */
+            width: 350px;
+            margin: auto;
+            margin-bottom: 100px;
+        }
+
+        #btnDiv{
+            /* border: 1px solid blue; */
+            width: 350px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        .inputTag{
+            width: 350px;
+            padding: 0px;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            height: 50px;
+            font-size: large;
+        }
+        .inputTag:focus{
+            outline: none;
+        }
+        .inputTag::placeholder{
+            font-size: large;
+        }
+
+        #loginBtn{
+            background-color: rgb(253, 228, 0);
+            width: 350px;
+            padding: 20px;
+            font-size: large;
+            border: 0px;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #qrBtn{
+            background-color: rgb(228,228,228);
+            color : black;
+            width: 310px;
+            padding: 20px;
+            font-size: large;
+            letter-spacing: 1px;
+            border-radius: 8px;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hr-sect {
+            display: flex;
+            flex-basis: 100%;
+            align-items: center;
+            color: rgba(0, 0, 0, 0.35);
+            font-size: 12px;
+            margin: 8px 0px;
+        }
+        .hr-sect::before,
+        .hr-sect::after {
+            content: "";
+            flex-grow: 1;
+            background: rgba(0, 0, 0, 0.35);
+            height: 1px;
+            font-size: 0px;
+            line-height: 0px;
+            margin: 0px 16px;   /* 마진 값으로 선의 길이를 조절 */
+        }
+        #joinDiv{
+            /* border: 1px solid blue; */
+            width: 350px;
+            margin: auto;
+        }
+        .joinTag{
+            text-decoration: none;
+            color: black;
+        }
+        .padding100{
+            padding-left: 110px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="top">
+            <h1>kakao</h1>
+        </div>
+        <div id="middle">
+            <div id="inputDiv">
+                <input type="text" class="inputTag" placeholder="카카오메일 아이디, 이메일, 전화번호"/>
+                <br/>
+                <input type="password" class="inputTag" placeholder="비밀번호"/>
+            </div>
+                
+            <div id="btnDiv">
+                <button type="button" id="loginBtn">로그인</button>
+                <div class="hr-sect">또는</div>
+                <a href="#" id="qrBtn">QR코드 로그인</a>
+            </div>
+
+            <div id="joinDiv"> 
+                <a href="#" class="joinTag">회원가입</a>
+                <a href="#" class="joinTag padding100" >계정찾기</a>
+                <a href="#" class="joinTag">비밀번호찾기</a>
+            </div>
+
+        </div>
+        <div id="bottom">
+            하단메뉴
+        </div>
+
+    </div>
+</body>
+</html>
