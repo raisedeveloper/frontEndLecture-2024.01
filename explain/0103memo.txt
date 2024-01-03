@@ -196,6 +196,12 @@ FullYear 막타 canal case
 getter sector 값을 가지고 오고 싶으면 method나 getter를 써서 가져옴
 
 
+
+
+
+
+
+04.변수.js
 identifire
 아이덴티 파이어(식별자)는 소문자로 시작함 (통상적으로)
 대문자 딱 하나 Class만 대문자로 시작함
@@ -371,6 +377,153 @@ let이나 var 대신에 const 쓸 때가 있음 참조형으로 쓰면 가능하
 
 
 
+
+
+
+
+
+
+01.everOdd(제목은 모두 영어임).js
+
+글자 한글자만 바꿔도 에러
+알파벳 i 다음에 j 쓰지말고 k를 써라.
+실수를 줄여야한다 : 그러러면 일관성을 유지하기 위한 연습을 해라
+
+
+
+
+mess.ceil 천장 올림 1.0보다 큰 수 2.0을 의미
+    .floar 바닥
+0에서부터 1사이의 값을 임의로 한다 x100을 하면
+메스 .실을 붙이면 1부터 100까지의 숫자가 만들어짐
+홀수인지 짝수인지 알수있는 프로그램을 만드려면
+
+if (num % 2 == 0 ) 
+
+2로 나눈 나머지가 없으면 0
+
+1로 나누면 나머지가 1이 됨
+
+
+*!!!*파일에서 파일로 넘어가는 법
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 06.상수.js
+Hello
+{ x: 10, y: 20 }
+
+C:\workspace\WebProject\03.javascript\ch02.기본>cd ..\ch03.조건문
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>
+
+
+// 홀수 /짝수
+
+let num = Math.ceil(Math.random() *  100);
+
+if (num % 2 == 0 ) {
+    console.log(`${num} 은/는 짝수입니다.`)
+}
+if (num % 1 == 1 ) {
+console.log(`${num} 은/는 홀수입니다.`)
+}
+
+
+
+
+조건을 분류하는 명령어 : 참이면 else
+
+if (num % 2 == 0 ) {
+    console.log(`${num} 은/는 짝수입니다.`)
+}
+else { console.log(`${num} 은/는 홀수입니다.`)
+}
+
+중괄호 안에는 하고싶은 것을 쓰면된다
+조건이 참일때 하고싶은 것을 쓰면 프로그램이 돌아감
+코딩할 때 문장이 하나일때는 괄호를 생략할 수 있다
+
+
+
+//조건문 안에 실행문이 한개만 있는 경우에는 {} 생략할 수 있음
+num = Math.ceil(Math.random() *  100);
+if (num % 2 == 0 ) 
+    console.log(`${num} 은/는 짝수입니다.`);
+else 
+    console.log(`${num} 은/는 홀수입니다.`);
+
+
+
+
+
+//3향 연산자
+num = Math.ceil(Math.random() *  100);
+let result = (num % 2 == 0) ? '짝수' : '홀수';      //조건 ? 참일 때의 값 : 거짓일때의 값
+console.log(`${num} 은/는 ${result}입니다.`);
+
+조건을 물어서 자바에서도 그대로 형식이 쓰인다 --> 잘 기억을 해야한다
+어떤 경우에는 반드시 해야한다 => fontend를 처리할 때 명령어를 한 줄 밖에 쓸 수 없을 때가 있기 때문이다 반드시 써야만하기 때문
+조금만 복잡하게 내면 못 풀수도 있다
+
+자기 생일을 딱 대면 만나이 계산해주는 프로그램을 만들 것
+
+가장 먼저 월일 비교 생일을 지났으면 
+생월이 1월이면 일자를 비교해야함
+
+적절하게 조건을 줄수있어야함
+
+방금 저런문제를 찾아서 풀어야함
+그렇지 않으면 프로그램 할 수가 없음
+
+문제해결 어떤 로직을 단위로직을 구하는 게 아니라
+전체적인 문제 해결을 컴퓨터 프로그램을 써서 해야한다
+
+문제가 크면 이 문제를 작게 쪼개야한다
+for문
+if문 쓰면 되겟네 하면서 전체적인 문제를 해결해가는것이다 > 문제를 어떻게 풀것인가?
+devide and conguer 디바이드 앤 콩코어
+
+눈높이를 if문에 맞추지 말고 그 이상을 봐라
+조건문 if for문을 편하게 쓸 수 있게 스스로 터득해야한다 => 우선 프로그램 언어 암기!!!!!!!!!!!!!!!!!!!!!!!!!!!
+자다가 일어나서 딱 쓸 수 있을 정도로 만들기~!!!!
+
+let today = new Date();
+console.log(today);     //표준시 형태로 출력됨
+let hour = today.getHours();
+console.log(hour);      //Timezone 적용된 현재 시각
+console.log(today.getMonth());
+
+if (hour < 12)
+    console.log(`오전 ${hour} 시입니다.`);
+if (hour >= 12)
+    console.log(`오후 ${hour - 12} 시입니다.`);
+
+    //if-else
+
+if (hour < 12)
+    console.log(`오전 ${hour} 시입니다.`);
+else
+    console.log(`오후 ${hour - 12} 시입니다.`);
+
+
+
+
+
+
+
+
+
+03.중첩조건문 node 03.nestedif.js
+
+4로 나누면 윤년
+100으로 나눠지면 평년
+400으로 나눠지면 윤년
+
+조건문 안에 또 조건문이 들어가는 것을
+중첩 조건문이라고 한다
+
+
+
+if문 안에 또 if 문이 들어오면 중첩조건문이라고 한다.
 
 
 
