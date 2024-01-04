@@ -15,3 +15,4 @@ for (let number of numbers) {
        maxVal = number;
 }
 console.log(`최소값: ${minVal}, 최대값: ${maxVal}`);
+//

@@ -27,5 +27,5 @@ for (let i = 1; i <= Math.min(num1, num2); i++) {
     commonDivisors.push(i);
 }
 console.log(`${num1}, ${num2}의 공약수는 ${commonDivisors}`)
-
+//
 

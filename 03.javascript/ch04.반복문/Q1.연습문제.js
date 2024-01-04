@@ -14,3 +14,4 @@ for (let i = 2; i <=9; i++)
         console.log(`${i} * ${k} =${k * i}`);
     console.log();
     }
+    //
