@@ -1,4 +1,4 @@
-/* 
+
 let score = Math.ceil(Math.random() * 60) + 40; //41 ~ 100 사이의 정수라는 카테고리 (범주)를 만든 식
 let grade = ''; // 빈 스트링을 만들어서 여기에 결과값(학점)이 입력되게 만듬 !! 꼭 이렇게 해야함!!
 
@@ -17,11 +17,11 @@ switch(parseInt(score / 10)) {
         grade = 'F';
 
 }
-console.log(`점수: ${score}, 학점: ${grade}`); */
+console.log(`점수: ${score}, 학점: ${grade}`);
 
-// 알람 45분 빨리 설정하기 : 계속 알람끄고 자는 습관때문에 미리 울리도록 맞춰두기 위함
+ // 알람 45분 빨리 설정하기 : 계속 알람끄고 자는 습관때문에 미리 울리도록 맞춰두기 위함
 
-/* let process = require("process");
+let process = require("process");
 let {stdin} = process;
 
 stdin.on("readable", function scanf(){
@@ -50,10 +50,10 @@ stdin.on("readable", function scanf(){
 
 a=10
 a-=1
-9 */
+9
 
-/* let H = Math.ceil(Math.random() * 24 - 1);
-let M = Math.ceil(Math.random() * 60 - 1); */
+/*let H = Math.ceil(Math.random() * 24 - 1);
+let M = Math.ceil(Math.random() * 60 - 1);*/
 
 /* let H = 7;
 let M = 20;
@@ -70,6 +70,7 @@ else
 if(H==-1)
     H=23;
 
+<<<<<<< HEAD
 console.log(`${H} ${M}`); */
 
 //알람시계 해답
@@ -90,3 +91,6 @@ let newHour = 0, newMin = 0; //minute가 45분을 넘는지 안넘는지 확인�
         else if (B > A && B > C) cout << B * 100;
         else cout << C * 100;
     }  */
+=======
+console.log(`${H} ${M}`);
+>>>>>>> 23c30ac9954fd14915e6bf93d62454d7dfdb2978
