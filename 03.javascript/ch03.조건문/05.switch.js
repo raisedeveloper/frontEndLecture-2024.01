@@ -55,7 +55,7 @@ a-=1
 /* let H = Math.ceil(Math.random() * 24 - 1);
 let M = Math.ceil(Math.random() * 60 - 1); */
 
-let H = 7;
+/* let H = 7;
 let M = 20;
 
 console.log(`${H} ${M}`);
@@ -70,8 +70,11 @@ else
 if(H==-1)
     H=23;
 
-console.log(`${H} ${M}`);
+console.log(`${H} ${M}`); */
 
+//알람시계 해답
+let hour = 6, minute = 30;
+let newHour = 0, newMin = 0; //minute가 45분을 넘는지 안넘는지 확인하면됨
 
 
 
