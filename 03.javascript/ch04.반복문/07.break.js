@@ -9,7 +9,7 @@ console.log(sum); */
 
 // 위의 방법보다 아래 방법이 더 많이 사용됨
 let sum = 0;
-while (ture) {
+while (true) {
     let dice = Math.ceil(Math.random()*6);
     console.log(dice);
     sum += dice;
