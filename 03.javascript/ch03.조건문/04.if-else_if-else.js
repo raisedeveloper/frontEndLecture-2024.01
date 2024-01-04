@@ -7,7 +7,7 @@
 
 // 카테고리를 나눠놓고 각각의 값을 도출하는 방법
 
-let score = Math.ceil(Math.random() * 60) + 40; //41 ~ 100 사이의 정수라는 카테고리 (범주)를 만든 식
+/* let score = Math.ceil(Math.random() * 60) + 40; //41 ~ 100 사이의 정수라는 카테고리 (범주)를 만든 식
 let grade = ''; // 빈 스트링을 만들어서 여기에 결과값(학점)이 입력되게 만듬
 
 if (score >= 100)
@@ -23,11 +23,11 @@ else if (score >= 60)
 else if (score >= 50)
     grade = 'F'
 
-    console.log(`점수: ${score}, 학점: ${grade}`)
+    console.log(`점수: ${score}, 학점: ${grade}`) */
 
 
  // FizzBuzz
-if  (score % 35 == 0)                       %5    %7   == 0 이런 식으로도 만들 수 있음
+if  (score % 35 == 0)                      // %5    %7   == 0 이런 식으로도 만들 수 있음
     console.log('FizzBuzz');
 else if (score % 5 == 0)
     console.log('Fizz');

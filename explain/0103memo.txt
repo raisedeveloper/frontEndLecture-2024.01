@@ -603,7 +603,17 @@ parseInt (score / 10) //반올림버림, 소수점을 잘라버림
 
 
 
+
+
+
 <문제3 알람설정>
+구글링 https://www.google.com/search?q=node.js+45%EB%B6%84+%EC%95%8C%EB%9E%8C+%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0+console+switch&sca_esv=595284512&cs=0&filter=0&biw=684&bih=598&dpr=1#ip=1
+
+a=10
+a-=1
+9
+
+https://www.acmicpc.net/problem/2884
 
 45분일찍알람설정
 7시 30분에 일어나려고할때
@@ -612,6 +622,3242 @@ parseInt (score / 10) //반올림버림, 소수점을 잘라버림
 실제 알람을 몇시로 맞춰야 하는지 새벽에 나가는 사람이라고 치고
 0시 30분에 일어나야하기 때문에
 23시 45분으로 맞춰야한다
+
+
+
+
+<문제4 주사위 세개>
+https://www.acmicpc.net/problem/2480
+
+// if = 시간설정 랜덤 
+let H = Math.ceil(Math.random() * 24 - 1);
+let M = Math.ceil(Math.random() * 60 - 1); */
+
+<정답>
+let H = 0;
+let M = 30;
+
+console.log(`${H} ${M}`);
+
+if(M<45){
+    M=60-45+M; // M이 60분이라는 뜻 근데 -45분을 빼고 +M
+    //60-45+30
+    H--;
+}
+else
+    M-=45;
+   //M= M-45
+   //M= 30-45
+
+if(H==-1)
+    H=23;
+
+console.log(`${H} ${M}`);
+console : 정보출력 하는 명령어 _ 괄호 () 안에 있는 형태로 출력해줌
+$ : css html 할때 썼던 id나 Class 같은 역할을 함_log 사용할 때만 씀
+log : 문자를 입력할 때나 '' or "" 로 한글을 넣을 때 _ 쉼표를 사용하지 않고 입력을 수월하게 해줌
+
+
+
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 03.자료형.js
+he said "I love you."
+I'll be back.
+he said "I love you."
+Back slash(\) 기호를 사용할 때에는 \ 두개를 쓰면 됩니다.
+안 하 ?
+2 더하기 3 은 5 입니다
+2 더하기 3은 5 입니다.
+올해는 2024년입니다.
+boolean boolean
+true true true
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 03.자료형.js
+he said "I love you."
+I'll be back.
+he said "I love you."
+Back slash(\) 기호를 사용할 때에는 \ 두개를 쓰면 됩니다.
+안 하 ?
+2 더하기 3 은 5 입니다
+2 더하기 3은 5 입니다.
+올해는 2024년입니다.
+boolean boolean
+true true true
+true
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 03.자료형.js
+he said "I love you."
+I'll be back.
+he said "I love you."
+Back slash(\) 기호를 사용할 때에는 \ 두개를 쓰면 됩니다.
+안 하 ?
+2 더하기 3 은 5 입니다
+2 더하기 3은 5 입니다.
+올해는 2024년입니다.
+boolean boolean
+true true true
+true
+
+C:\workspace\WebProject\03.javascript\ch02.기본>git log
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+:...skipping...
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+    firstcommit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+    firstcommit
+ ESCOC
+main)
+
+
+
+
+ecture-2024.01
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+om>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+    firstcommit
+ ESCOC
+main)
+
+
+
+
+ecture-2024.01
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+om>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+    firstcommit
+ ESCOC
+main)
+
+
+
+
+ecture-2024.01
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+om>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+ ESCOD
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+    firstcommit
+(END)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+:
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+    firstcommit
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 03.자료형.js
+he said "I love you."
+I'll be back.
+he said "I love you."
+Back slash(\) 기호를 사용할 때에는 \ 두개를 쓰면 됩니다.
+안 하 ?
+2 더하기 3 은 5 입니다
+2 더하기 3은 5 입니다.
+올해는 2024년입니다.
+boolean boolean
+true true true
+true
+true
+false
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 03.자료형.js
+he said "I love you."
+I'll be back.
+he said "I love you."
+Back slash(\) 기호를 사용할 때에는 \ 두개를 쓰면 됩니다.
+안 하 ?
+2 더하기 3 은 5 입니다
+2 더하기 3은 5 입니다.
+올해는 2024년입니다.
+boolean boolean
+true true true
+true
+true
+false
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 03.자료형.js
+he said "I love you."
+I'll be back.
+he said "I love you."
+Back slash(\) 기호를 사용할 때에는 \ 두개를 쓰면 됩니다.
+안 하 ?
+2 더하기 3 은 5 입니다
+2 더하기 3은 5 입니다.
+올해는 2024년입니다.
+boolean boolean
+true true true
+true
+true
+false
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 03.자료형.js
+he said "I love you."
+I'll be back.
+he said "I love you."
+Back slash(\) 기호를 사용할 때에는 \ 두개를 쓰면 됩니다.
+안 하 ?
+2 더하기 3 은 5 입니다
+2 더하기 3은 5 입니다.
+올해는 2024년입니다.
+boolean boolean
+true true true
+true
+true
+false
+
+C:\workspace\WebProject\03.javascript\ch02.기본>git log
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+commit 16c978e719c4c821f3fc2a04f6341eaa1c98a031
+Author: develop_yunju <155404528+raisedeveloper@users.noreply.github.com>
+Date:   Tue Jan 2 13:57:21 2024 +0900
+
+    Create README.md
+
+commit 410d64b75fb73def4fe876a58b1e2543be7497d2
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:45:35 2024 +0900
+
+    Royal
+
+commit 7ff14ae22b82643ff16e60541c93247836fc932a
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 13:44:27 2024 +0900
+
+    123
+
+commit 122c95f814d5945f1de333ab488096ec6b6547a7
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:38:06 2024 +0900
+
+    test
+
+commit 4bddcb95cee8971998e06dd12d56c6c76547f126
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 12:04:07 2024 +0900
+
+    firstcommit
+
+C:\workspace\WebProject\03.javascript\ch02.기본>git log
+commit 3f3bc3fa7fc9840314068c385c8ce5dbd4939984 (HEAD -> main, origin/main)
+Merge: afd2ab8 dab86bc
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:22:06 2024 +0900
+
+    Merge branch 'main' of https://github.com/raisedeveloper/frontEndLecture-2024.01
+
+commit afd2ab8b541193fb4c9ba14c7e742256ba37d9d3
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Wed Jan 3 11:21:47 2024 +0900
+
+    JS 기본
+
+commit dab86bc271cdf2fd2a48c5490471cf48758db05f
+Author: raisedeveloper <ilove4903@naver.com>
+Date:   Tue Jan 2 14:12:04 2024 +0900
+
+    delete test.html
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 03.자료형.js
+he said "I love you."
+I'll be back.
+he said "I love you."
+Back slash(\) 기호를 사용할 때에는 \ 두개를 쓰면 됩니다.
+안 하 ?
+2 더하기 3 은 5 입니다
+2 더하기 3은 5 입니다.
+올해는 2024년입니다.
+boolean boolean
+true true true
+true
+true
+false
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 04변수.js
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\workspace\WebProject\03.javascript\ch02.기본\04변수.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 04.변수.js
+둘레는 62.83185307, 면적은 314.15926535 입니다.
+3 A quick brown foxjumps over the lazy dog
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 04.변수.js
+둘레는 62.83185307, 면적은 314.15926535 입니다.
+3 A quick brown foxjumps over the lazy dog
+0 1
+1 1
+1 0
+0 0
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 04.변수.js
+
+C:\workspace\WebProject\03.javascript\ch02.기본>
+C:\workspace\WebProject\03.javascript\ch02.기본>node 04.변수.js
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 04.변수.js
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 04.변수.js
+function
+function
+object
+1 2
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 04.변수.js
+function
+function
+object
+1 2
+undefined undefined
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 04.변수.js
+function
+function
+object
+1 2
+undefined undefined
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 04.변수.js
+function
+function
+object
+1 2
+undefined undefined
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 04.변수.js
+function
+function
+object
+1 2
+undefined undefined
+number number
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 05.^S형변환.js
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\workspace\WebProject\03.javascript\ch02.기본\05.형변환.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch02.기본>05.형변환.js
+
+C:\workspace\WebProject\03.javascript\ch02.기본>05.형변환.js
+
+C:\workspace\WebProject\03.javascript\ch02.기본>05.형변환.js
+
+C:\workspace\WebProject\03.javascript\ch02.기본>05.형변환.js
+
+C:\workspace\WebProject\03.javascript\ch02.기본>05.형변환.js
+
+C:\workspace\WebProject\03.javascript\ch02.기본>05.형변환.js
+
+C:\workspace\WebProject\03.javascript\ch02.기본>05.형변환.js
+
+C:\workspace\WebProject\03.javascript\ch02.기본>05.형변환.js
+
+C:\workspace\WebProject\03.javascript\ch02.기본>06.상수.js
+
+C:\workspace\WebProject\03.javascript\ch02.기본>06.상수.js
+
+C:\workspace\WebProject\03.javascript\ch02.기본>06.상수.js
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 06.상수.js
+Hello
+{ x: 10, y: 20 }
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 05.형변환js
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\workspace\WebProject\03.javascript\ch02.기본\05. 형변환js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 05.형변환js
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\workspace\WebProject\03.javascript\ch02.기본\05. 형변환js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 05.형변환js
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\workspace\WebProject\03.javascript\ch02.기본\05. 형변환js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 05.형변환.js.
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\workspace\WebProject\03.javascript\ch02.기본\05. 형변환.js.'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 05.형변환.js
+C:\workspace\WebProject\03.javascript\ch02.기본\05.형변환.js:3
+console.log(123, string(123));
+        ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch02.기본\05. 형변환.js:3:9)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 05.형변환.js
+C:\workspace\WebProject\03.javascript\ch02.기본\05.형변환.js:3
+console.log(123, string(123));
+        ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch02.기본\05. 형변환.js:3:9)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 05.형변환.js
+C:\workspace\WebProject\03.javascript\ch02.기본\05.형변환.js:3
+console.log(123, string(123));
+        ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch02.기본\05. 형변환.js:3:9)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 05.형변환.js
+C:\workspace\WebProject\03.javascript\ch02.기본\05.형변환.js:3
+console.log(123, string(123));
+        ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch02.기본\05. 형변환.js:3:9)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 05.형변환.js
+123 123
+101 1 0
+NaN
+false false false false false false
+124 booltrue integer123
+25 64 2
+true true
+true true
+true true
+true false
+
+C:\workspace\WebProject\03.javascript\ch02.기본>node 06.상수.js
+Hello
+{ x: 10, y: 20 }
+
+C:\workspace\WebProject\03.javascript\ch02.기본>cd ..\ch03.조건문
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 01.evenOdd.js
+34 은/는 짝수입니다.
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 01.evenOdd.js
+72 은/는 짝수입니다.
+72 은/는 짝수입니다.
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 01.evenOdd.js
+85 은/는 홀수입니다.
+28 은/는 짝수입니다.
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 01.evenOdd.js
+68 은/는 짝수입니다.
+68 은/는 짝수입니다.
+68 은/는 짝수입니다.
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 01.evenOdd.js
+20 은/는 짝수입니다.
+20 은/는 짝수입니다.
+4 은/는 짝수입니다.
+80 은/는 짝수입니다.
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 01.evenOdd.js
+27 은/는 홀수입니다.
+15 은/는 홀수입니다.
+23 은/는 홀수입니다.
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 01.evenOdd.js
+59 은/는 홀수입니다.
+1 은/는 홀수입니다.
+77 은/는 홀수입니다.
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 02.amPm.js
+2024-01-03T05:15:14.185Z
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 02.amPm.js
+2024-01-03T05:15:54.656Z
+14
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 02.amPm.js
+2024-01-03T05:16:05.592Z
+14
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 02.amPm.js
+2024-01-03T05:17:10.436Z
+14
+0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 02.amPm.js
+2024-01-03T05:17:50.020Z
+14
+0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 02.amPm.js
+2024-01-03T05:17:53.339Z
+14
+0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 02.amPm.js
+2024-01-03T05:17:54.550Z
+14
+0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 02.amPm.js
+2024-01-03T05:17:55.522Z
+14
+0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 02.amPm.js
+2024-01-03T05:17:56.800Z
+14
+0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 02.amPm.js
+2024-01-03T05:19:00.518Z
+14
+0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 02.amPm.js
+2024-01-03T05:19:12.414Z
+14
+0
+오전 14 시입니다.
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 02.amPm.js
+2024-01-03T05:20:00.733Z
+14
+0
+오전 14 시입니다.
+오후 2 시입니다.
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 02.amPm.js
+2024-01-03T05:20:54.948Z
+14
+0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 02.amPm.js
+2024-01-03T05:21:13.789Z
+14
+0
+오후 2 시입니다.
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 02.amPm.js
+2024-01-03T05:21:54.880Z
+14
+0
+오후 2 시입니다.
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 02.amPm.js
+2024-01-03T05:23:01.356Z
+14
+0
+오후 2 시입니다.
+오후 2 시입니다.
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 03.nestedIf.js
+C:\workspace\WebProject\03.javascript\ch03.조건문\03.nestedIf.js:6
+if (year % 4 == 0) {
+^
+
+ReferenceError: year is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\03.nestedIf.js:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 03.nestedIf.js
+C:\workspace\WebProject\03.javascript\ch03.조건문\03.nestedIf.js:6
+if (year % 4 == 0) {
+^
+
+ReferenceError: year is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\03.nestedIf.js:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 03.nestedIf.js
+C:\workspace\WebProject\03.javascript\ch03.조건문\03.nestedIf.js:6
+if (year % 4 == 0) {
+^
+
+ReferenceError: year is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\03.nestedIf.js:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 03.nestedIf.js
+C:\workspace\WebProject\03.javascript\ch03.조건문\03.nestedIf.js:22
+if(year % 4 == 0 && (year % 100 != 100 || year % 400 ==0))
+
+
+SyntaxError: Unexpected end of input
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 03.nestedIf.js
+C:\workspace\WebProject\03.javascript\ch03.조건문\03.nestedIf.js:22
+if(year % 4 == 0 && (year % 100 != 100 || year % 400 ==0))
+
+
+SyntaxError: Unexpected end of input
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 03.nestedIf.js
+C:\workspace\WebProject\03.javascript\ch03.조건문\03.nestedIf.js:6
+if (year % 4 == 0) {
+^
+
+ReferenceError: year is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\03.nestedIf.js:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 03.nestedIf.js
+2100년은 평년입니다.
+2100년은 평년입니다.
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 78, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 67, 학점: D
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 72, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 48, 학점:
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 83, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 42, 학점:
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 45, 학점:
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 89, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 91, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 54, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 75, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 59, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 51, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 75, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 85, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 87, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 45, 학점:
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 85, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 51, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 49, 학점:
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 71, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 47, 학점:
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 03.nestedIf.js
+2100년은 평년입니다.
+2100년은 평년입니다.
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 03.nestedIf.js
+2100년은 평년입니다.
+2100년은 평년입니다.
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 03.nestedIf.js
+2100년은 평년입니다.
+2100년은 평년입니다.
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 55, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 52, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 76, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 78, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 55, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 51, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 67, 학점: D
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 73, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 93, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 44, 학점:
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 75, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 98, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 90, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 77, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 52, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 47, 학점:
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 72, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 92, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 72, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 49, 학점:
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 57, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 81, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 90, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 62, 학점: D
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 67, 학점: D
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 98, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 73, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 51, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 83, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 95, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 48, 학점:
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 53, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 100, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 54, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 79, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 93, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 80, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 43, 학점:
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 59, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 68, 학점: D
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 90, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 92, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 77, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 58, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 91, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 74, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 90, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 80, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 58, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 65, 학점: D
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 59, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 73, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 68, 학점: D
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 48, 학점:
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 80, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 41, 학점:
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 84, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 72, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 54, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 100, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 03.nestedIf.js
+2100년은 평년입니다.
+2100년은 평년입니다.
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 100, 학점: A+
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 100, 학점: A+
+C:\workspace\WebProject\03.javascript\ch03.조건문\04.if-else_if-else.js:32
+else if (Fizz % 5 == 0)
+     ^
+
+ReferenceError: Fizz is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\04.if-else_if-else.js:32:6)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 100, 학점: A+
+C:\workspace\WebProject\03.javascript\ch03.조건문\04.if-else_if-else.js:32
+else if (Fizz % 5 == 0)
+     ^
+
+ReferenceError: Fizz is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\04.if-else_if-else.js:32:6)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 100, 학점: A+
+Fizz
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 99, 학점: A
+99
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 72, 학점: C
+72
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 43, 학점:
+43
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 62, 학점: D
+62
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 52, 학점: F
+52
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.swich.js
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\workspace\WebProject\03.javascript\ch03.조건문\05.swich.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.swich.js
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\workspace\WebProject\03.javascript\ch03.조건문\05.swich.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.swich.js
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\workspace\WebProject\03.javascript\ch03.조건문\05.swich.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.swtich.js
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\workspace\WebProject\03.javascript\ch03.조건문\05.swtich.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 89, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 43, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 59, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 46, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 98, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 42, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 49, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 76, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 85, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 43, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 69, 학점: D
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 65, 학점: D
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 46, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 56, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 44, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 74, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 60, 학점: D
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 52, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 95, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 94, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 56, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 82, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 70, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 41, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 79, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 71, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 92, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 49, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 89, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 87, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 81, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 81, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 89, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 70, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 41, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 97, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 42, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 56, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 41, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 58, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 89, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 80, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 94, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 68, 학점: D
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 72, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 83, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 78, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 66, 학점: D
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 97, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 51, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 44, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 100, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 42, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 100, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 78, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 46, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 93, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 42, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 68, 학점: D
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 43, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 70, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 74, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 91, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 82, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 67, 학점: D
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 98, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 91, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 78, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 47, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 72, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 76, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 92, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 61, 학점: D
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 97, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 93, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 60, 학점: D
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 53, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 78, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 57, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 44, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 76, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 70, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 70, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 95, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 75, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 60, 학점: D
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 53, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 70, 학점: C
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 59, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 88, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 44, 학점: F
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 82, 학점: B
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+점수: 100, 학점: A
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.swtich.js
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\workspace\WebProject\03.javascript\ch03.조건문\05.swtich.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:24
+let hour = input[0];
+           ^
+
+ReferenceError: input is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:24:12)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:25
+let hour = input[0];
+           ^
+
+ReferenceError: input is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:25:12)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:25
+let hour = input[0];
+           ^
+
+ReferenceError: input is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:25:12)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:26
+if (hour == 0 (hour = 24));
+              ^
+
+TypeError: 0 is not a function
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:26:15)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:25
+let hour = inputs[];
+                  ^
+
+SyntaxError: Unexpected token ']'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+node:fs:581
+  return binding.open(
+                 ^
+
+Error: ENOENT: no such file or directory, open 'C:\workspace\WebProject\03.javascript\ch03.조건문\dev\stdin'
+    at Object.openSync (node:fs:581:18)
+    at Object.readFileSync (node:fs:457:35)
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:37:27)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\workspace\\WebProject\\03.javascript\\ch03.조건문\\dev\\stdin'
+}
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+node:fs:581
+  return binding.open(
+                 ^
+
+Error: ENOENT: no such file or directory, open 'C:\workspace\WebProject\03.javascript\ch03.조건문\dev\stdin'
+    at Object.openSync (node:fs:581:18)
+    at Object.readFileSync (node:fs:457:35)
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:37:27)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\workspace\\WebProject\\03.javascript\\ch03.조건문\\dev\\stdin'
+}
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:27
+awake.on("readable", function scanf(){
+      ^
+
+TypeError: Cannot read properties of undefined (reading 'on')
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:27:7)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:27
+awake.on("readable", function scanf(){
+      ^
+
+TypeError: Cannot read properties of undefined (reading 'on')
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:27:7)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+
+NaN NaN
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+
+NaN NaN
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+
+NaN NaN
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+
+NaN NaN
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+
+NaN NaN
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+10 24
+0 15
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>23 0
+'23'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+23 00
+1 18
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+10 10
+0 15
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+10 10
+0 15
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+6 50
+6 5
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+5 18
+4 33
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+0 30
+23 45
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 42, 학점:
+Buzz
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 58, 학점: F
+58
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+점수: 97, 학점: A
+97
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 04.if-else_if-else.js
+C:\workspace\WebProject\03.javascript\ch03.조건문\04.if-else_if-else.js:30
+if  (score % 35 == 0)                      // %5    %7   == 0 이런 식으로도 만 들 수 있음
+^
+
+ReferenceError: score is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\04.if-else_if-else.js:30:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+0 50
+0 5
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82
+if (A == B && B == C) prize << 10000 + A * 1000;
+^
+
+ReferenceError: A is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+0 50
+0 5
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82
+if (A == B && B == C) prize << 10000 + A * 1000;
+^
+
+ReferenceError: A is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+0 50
+0 5
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82
+if (A == B && B == C) prize << 10000 + A * 1000;
+^
+
+ReferenceError: A is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+0 50
+0 5
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82
+if (A == B && B == C) prize << 10000 + A * 1000;
+^
+
+ReferenceError: A is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+0 50
+0 5
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82
+if (A == B && B == C) prize << 10000 + A * 1000;
+^
+
+ReferenceError: A is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+0 50
+0 5
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82
+if (A == B && B == C) prize << 10000 + A * 1000;
+^
+
+ReferenceError: A is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+0 50
+0 5
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82
+if (A == B && B == C) prize << 10000 + A * 1000;
+^
+
+ReferenceError: A is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+0 30
+23 45
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82
+if (A == B && B == C) prize << 10000 + A * 1000;
+^
+
+ReferenceError: A is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+0 30
+23 45
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82
+if (A == B && B == C) prize << 10000 + A * 1000;
+^
+
+ReferenceError: A is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+0 30
+23 45
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82
+if (A == B && B == C) prize << 10000 + A * 1000;
+^
+
+ReferenceError: A is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+0 30
+23 45
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82
+if (A == B && B == C) prize << 10000 + A * 1000;
+^
+
+ReferenceError: A is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+0 30
+23 45
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82
+if (A == B && B == C) prize << 10000 + A * 1000;
+^
+
+ReferenceError: A is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+0 30
+23 45
+C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82
+if (A == B && B == C) prize << 10000 + A * 1000;
+^
+
+ReferenceError: A is not defined
+    at Object.<anonymous> (C:\workspace\WebProject\03.javascript\ch03.조건문\05.switch.js:82:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.10.0
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+0 50
+0 5
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>node 05.switch.js
+7 30
+6 45
+
+C:\workspace\WebProject\03.javascript\ch03.조건문>
+
+
+
+
+
+
+
+
+
+
+
 
 
 

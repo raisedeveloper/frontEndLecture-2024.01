@@ -55,8 +55,8 @@ a-=1
 /* let H = Math.ceil(Math.random() * 24 - 1);
 let M = Math.ceil(Math.random() * 60 - 1); */
 
-let H = 0;
-let M = 30;
+let H = 7;
+let M = 20;
 
 console.log(`${H} ${M}`);
 
@@ -73,3 +73,17 @@ if(H==-1)
 console.log(`${H} ${M}`);
 
 
+
+
+
+
+// 2480문제 : <주사위 세개> 
+
+/* if (A == B && B == C) prize << 10000 + A * 1000;
+    else if (A == B || B == C) cout << 1000 + B * 100;
+    else if (C == A) cout << 1000 + C * 100;
+    else {
+        if (A > B && A > C) cout << A * 100;
+        else if (B > A && B > C) cout << B * 100;
+        else cout << C * 100;
+    }  */
