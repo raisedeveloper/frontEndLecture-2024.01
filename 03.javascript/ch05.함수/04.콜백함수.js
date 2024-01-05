@@ -19,6 +19,8 @@ callFiveTimes(function(){
 });
 
 //익명 함수로 화살표 함수를 사용하는 것이 더 보편적
-
+callFiveTimes(() => {
+    console.log('함수가 호출되었습니다.');
+});
 
 
