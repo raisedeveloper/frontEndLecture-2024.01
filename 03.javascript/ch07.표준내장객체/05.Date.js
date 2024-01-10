@@ -11,8 +11,8 @@ function twoDigit(num) {
     return (num < 10) ? '0' + num : String(num);            // 4 --> '04, 23 --> '23'
 }
 function myDateTime() {
-    let now = new Date(); 
-    return `${now.getFullYear()}-${twoDigit(now.getMonth()+1)}-${twoDigit(now.getDate())}` + 
+    let now = new Date();
+    return `${now.getFullYear()}-${twoDigit(now.getMonth() + 1)}-${twoDigit(now.getDate())}` +
         `${twoDigit(now.getHours())}:${twoDigit(now.getMinutes())}:${twoDigit(now.getSeconds())}`;
 
 }
@@ -33,7 +33,7 @@ console.log(new Date('2024-01-08 14:00:00').getTime());
 
 // 4. 시간 연산
 // 더하기, 빼기 (플마)
-let date = new Date 
+let date = new Date
 date.setDate(date.getDate() + 100);     //오늘부터 100일 후
 console.log(myDateTime(date));
 date.setDate(date.getDate() - 100);     //오늘부터 100일 전
@@ -46,5 +46,5 @@ console.log(myDateTime(date));
 // 시간 간격
 let gradDay = new Date('2024-06-13 17:30');
 let diffMs = gradDay.getTime() - new Date().getTime();
-let diffDay = (diffMs / (1000* 60 * 60 * 24));
+let diffDay = (diffMs / (1000 * 60 * 60 * 24));
 console.log(diffDay);

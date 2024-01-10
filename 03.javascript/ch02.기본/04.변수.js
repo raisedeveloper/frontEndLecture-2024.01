@@ -8,9 +8,9 @@
 //      7. 클래스 명은 대문자로 시작
 
 //      변수(variable)
-/* let pi = 3.1415926535;      //신식
+let pi = 3.1415926535;      //신식
 var radius = 10;            //구식
-console.log(`둘레는 ${2* pi * radius}, 면적은 ${pi * radius * radius } 입니다.`);
+console.log(`둘레는 ${2 * pi * radius}, 면적은 ${pi * radius * radius} 입니다.`);
 
 // 복합 대입 연산자
 let a = 1, str = '';
@@ -20,19 +20,19 @@ str += 'jumps over the lazy dog';
 console.log(a, str);
 
 //증감 연산자
-let x = 0,y = 0;
+let x = 0, y = 0;
 console.log(x++, ++y);      //변수 뒤: post-increment, 변수 앞: pre-increment
-console.log(x,y);
+console.log(x, y);
 console.log(x--, --y);      //변수 뒤: post-increment, 변수 앞: pre-increment
-console.log(x,y); */
+console.log(x, y);
 
 //나머지 자료형
 // 4. 함수(function)
-console.log(typeof function() {});
-console.log(typeof(() => {}));      //화살표(arrow) 함수, 람다 함수, 익명 함수 '프로가 사용'
+console.log(typeof function () { });
+console.log(typeof (() => { }));      //화살표(arrow) 함수, 람다 함수, 익명 함수 '프로가 사용'
 
 // 5. 객체타입(object)
-let obj = {x: 1, y:2}; // 키(x), 밸류(y) 쌍을 오브젝트라고 한다
+let obj = { x: 1, y: 2 }; // 키(x), 밸류(y) 쌍을 오브젝트라고 한다
 console.log(typeof obj);
 console.log(obj.x, obj.y);
 

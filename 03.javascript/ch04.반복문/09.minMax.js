@@ -11,8 +11,8 @@ for (let number of numbers) {
     if (number < minVal)
         minVal = number;
     //최대값
-    if(number > maxVal)
-       maxVal = number;
+    if (number > maxVal)
+        maxVal = number;
 }
 console.log(`최소값: ${minVal}, 최대값: ${maxVal}`);
 //

@@ -9,7 +9,7 @@ if (hour < 12)
 if (hour >= 12)
     console.log(`오후 ${hour - 12} 시입니다.`);
 
-    //if-else
+//if-else
 
 if (hour < 12)
     console.log(`오전 ${hour} 시입니다.`);

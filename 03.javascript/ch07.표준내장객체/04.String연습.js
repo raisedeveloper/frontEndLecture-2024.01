@@ -29,7 +29,7 @@ console.log(countArr);
 let hourCount = 0; // 3이 포함된 시간
 let minCount = 0;  // 3이 포함된 분
 
-for (let i = 0; i < 24; i++) {  
+for (let i = 0; i < 24; i++) {
     i = String(i);       // i는 정수이기 때문에 split 하기 위해 문자열로 변경함     '11'
     i = i.split('');     // 문자열로 변환된 i를 한 자리수씩 잘라서 배열로 저장      ['1', '1']
     for (let k = 0; k < i.length; k++) {    // 반복횟수는 배열의 길이만큼
@@ -48,7 +48,7 @@ for (let i = 0; i < 60; i++) {
             break;
         }
         if (Number(i[k]) == 3)
-        minCount++;
+            minCount++;
     }
     i = Number(i.join(''));
 }

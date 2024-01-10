@@ -7,7 +7,7 @@ let obj = {
     price: 1000,
 
     //메소드(method)
-    print: function(){
+    print: function () {
         console.log(`${this.name}의 가격은 ${this.price}원 입니다.`);
     }
 }

@@ -1,11 +1,11 @@
 let totalSec = 0;       // 전체를 0으로 맞춤
 for (let h = 0; h < 24; h++) {      //시간 0부터 시작, 시간이 24보다 클때까지 돌림, 미리 한시간씩 더함.
     for (let m = 0; m < 60; m++) {
-        if (h % 10 == 3 || Math.floor(m / 10) == 3 || m % 10 ==      3) {    
-// || or / 시간을 10으로 나눴을 때 나머지가 3인경우 - 03, 13, 23시
-// 분을 10으로 나눈 값을 버림 했을 때 3인 경우 - 30~39분 / floor는 나머지를 다 버리니까 3.9가 나와도 3으로 봄
-// 분을 10으로 나눴을 때 나머지가 3인 경우 - 03, 13, 23, 33 , 43, 53분
-// 겹쳐도 상관 없음. 왜냐하면 이중포문에서 한 가지 경우에 더해지는 값은 60 뿐이기 때문
+        if (h % 10 == 3 || Math.floor(m / 10) == 3 || m % 10 == 3) {
+            // || or / 시간을 10으로 나눴을 때 나머지가 3인경우 - 03, 13, 23시
+            // 분을 10으로 나눈 값을 버림 했을 때 3인 경우 - 30~39분 / floor는 나머지를 다 버리니까 3.9가 나와도 3으로 봄
+            // 분을 10으로 나눴을 때 나머지가 3인 경우 - 03, 13, 23, 33 , 43, 53분
+            // 겹쳐도 상관 없음. 왜냐하면 이중포문에서 한 가지 경우에 더해지는 값은 60 뿐이기 때문
             totalSec += 60;
         }
     }
@@ -50,18 +50,18 @@ for (let i = 0; i < 24; i++) {
     i = String(i);
     if (i.length == '1')
         i = '0' + i;
-        console.log(i);
-    for (let k = 0; k < 60; k++){
+    console.log(i);
+    for (let k = 0; k < 60; k++) {
         k = String(k);
         if (k.length == '1')
             k = '0' + k;
         allTimeStr.push(i + k);
     }
 }
-for(time of allTimeStr){
-    for(let i = 0; i< time.length; i++)
-        if(time[i] == 3){
-            result+=60;
+for (time of allTimeStr) {
+    for (let i = 0; i < time.length; i++)
+        if (time[i] == 3) {
+            result += 60;
             break;
         }
 }

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성 순서 오류 해결</title>
+
+</head>
+
+<body>
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <script>        // 스크립트를 아래로 옮겨 h1과 h2가 선언된 후 진행
+        document.querySelector('h1').style.backgroundColor = 'yellow';
+        document.querySelector('h2').style.color = 'red';   
+    </script>
+</body>
+
+</html>

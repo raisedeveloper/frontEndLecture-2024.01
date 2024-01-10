@@ -38,22 +38,22 @@ cars.sort();
 console.log(numbers);
 
 // 내림차순 (Descending order 큰것에서 작은것)
-numbers.sort(function(a, b) {
-    return b - a ;
+numbers.sort(function (a, b) {
+    return b - a;
 });
-cars.sort(function(a, b){
+cars.sort(function (a, b) {
     if (a < b)
         return 1;
-    if ( a > b)
-       return -1;
+    if (a > b)
+        return -1;
     return 0;
 });
 console.log(cars);
 
 let person = [
-    {name: 'James', age: 30, job:'programer'},
-    {name: 'maria', age: 24, job:'student'},
-    {name: 'brain', age: 27, job: 'teacher'}
+    { name: 'James', age: 30, job: 'programer' },
+    { name: 'maria', age: 24, job: 'student' },
+    { name: 'brain', age: 27, job: 'teacher' }
 ];
 
 // 이름의 알파벳 오른차순으로 정렬

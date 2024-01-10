@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글자 조작</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+            alert($('#first').text()); // 안에 있는 내용만
+            alert($('#first').html()); // 모든 코드를 
+            alert($('h1').text()); // 태그가 가지고 있는 모든 글자를 가져옴
+            alert($('h1').html()); // 태그 중 맨 윗줄만 나옴
+
+            $('h1').text('text() method로 <span style="color:brown">변경</span>'); // 모든 h1 텍스트만 변경
+            $('h1').html('html() method로 <span style="color:brown">변경</span>'); // 모든 h1 태그와 텍스트 변경
+        });
+
+    </script>
+</head>
+
+<body style="margin: 50px;">
+    <h1 id="first">First <span style="color:brown">Header</span></h1>
+    <h1>Second <span style="color:brown">Header</span></h1>
+    <h1>Third Header</h1>
+</body>
+
+</html>

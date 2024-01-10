@@ -1,56 +1,56 @@
 //중첩 반복문
 //1. 별 다섯개를 다섯줄 그리기
 
-/* for (let i = 0; i < 5; i++) {      // 다섯줄 
+for (let i = 0; i < 5; i++) {      // 다섯줄 
     let star = '';             // 초기화 _ 빈 문자열 만들어주기 '';
     for (let k = 0; k < 5; k++) { // 별 다섯개   
-    star += '*';
-}
-console.log(star);
+        star += '*';
+    }
+    console.log(star);
 }
 
 //2. 다이아몬드 그리기 (1사분면)
-for (let i = 0; i < 5; i++) {      
-    let star = '';             
-    for (let k = 0; k < i; k++) {    
-    star += '*';
-}
-console.log(star);
+for (let i = 0; i < 5; i++) {
+    let star = '';
+    for (let k = 0; k < i; k++) {
+        star += '*';
+    }
+    console.log(star);
 }
 
 //(4사분면)
-for (let i = 5; i < 0; i--) {              
-    let star = '';                       
-    for (let k = 0; k < i; k++) {           
-    star += '*';
-}
-console.log(star);
+for (let i = 5; i < 0; i--) {
+    let star = '';
+    for (let k = 0; k < i; k++) {
+        star += '*';
+    }
+    console.log(star);
 }
 
 
 //2사분면
-for (let i = 0; i < 5; i++) {             
-    let star = '';                       
-    for (let k = 0; k < 4 - i; k++) {     
-    star += ' ';
+for (let i = 0; i < 5; i++) {
+    let star = '';
+    for (let k = 0; k < 4 - i; k++) {
+        star += ' ';
     }
-for (let k = 0; k < i + 1; i++) {
-    star += '*';
+    for (let k = 0; k < i + 1; i++) {
+        star += '*';
     }
-console.log(star);
+    console.log(star);
 }
 
 //3사분면
-for (let i = 0; i < 5; i++) {             
-    let star = '';                        
-    for (let k = 0; k < i; k++) {     
-    star += ' ';
+for (let i = 0; i < 5; i++) {
+    let star = '';
+    for (let k = 0; k < i; k++) {
+        star += ' ';
     }
-for (let k = 0; k < 5 - i; k++) {
-    star += '*';
+    for (let k = 0; k < 5 - i; k++) {
+        star += '*';
     }
-console.log(star);
-} */
+    console.log(star);
+}
 
 //다이아몬드 완성
 let maxDia = 7;
@@ -63,7 +63,7 @@ for (let i = 0; i <= N; i++) {
         line += '*';
     console.log(line);
 }
-for (let i = N-1; i >= 0; i--){
+for (let i = N - 1; i >= 0; i--) {
     let line = '';
     for (let k = 0; k < N - i; k++)
         line += ' ';

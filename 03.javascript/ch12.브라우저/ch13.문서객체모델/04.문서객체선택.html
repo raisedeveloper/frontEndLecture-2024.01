@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서 객체 선택</title>
+    <script>
+        function handler() {
+            // 첫번째 h1 태그의 배경색을 yellow
+            document.querySelector('h1').style.backgroundColor = 'yellow';
+
+            // 모든 h1 태그의 글자색을 red
+            let h1Array = document.querySelectorAll('h1');
+            for (let h1 of h1Array)
+                h1.style.color = 'red';
+
+            // class가  header1인 요소의 배경색을 aqua
+            let header1Array = document.querySelectorAll('.header1');
+            for (let h1 of header1Array)
+                h1.style.backgroundColor = 'aqua';
+
+            // id가 header1인 요소의 텍스트를 From JavaScript
+            document.querySelector('#header1').innerHTML = 'From JavaScript';
+        }
+
+    </script>
+</head>
+
+<body style="margin: 50px;">
+    <h1>header No.1</h1>
+    <h1 class="header1">header No.2</h1>
+    <h1 id="header1">header No.3</h1>
+    <h1 class="header1">header No.4</h1>
+    <button onclick="handler()">실행!!!</button>
+
+</body>
+
+</html>

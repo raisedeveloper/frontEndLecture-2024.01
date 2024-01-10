@@ -10,7 +10,7 @@ console.log(sum); */
 // 위의 방법보다 아래 방법이 더 많이 사용됨
 let sum = 0;
 while (true) {
-    let dice = Math.ceil(Math.random()*6);
+    let dice = Math.ceil(Math.random() * 6);
     console.log(dice);
     sum += dice;
     if (sum > 21)
@@ -18,8 +18,8 @@ while (true) {
 }
 console.log(sum);
 
-for (let i=0; i < 5; i++) {
-    for (let k=0; k<5; k++) {
+for (let i = 0; i < 5; i++) {
+    for (let k = 0; k < 5; k++) {
         if (k == 2)
             break;
     }

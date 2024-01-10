@@ -23,11 +23,11 @@ else if (score >= 60)
 else if (score >= 50)
     grade = 'F'
 
-    console.log(`점수: ${score}, 학점: ${grade}`)
+console.log(`점수: ${score}, 학점: ${grade}`)
 
 
- // FizzBuzz
-if  (score % 35 == 0)                      // %5    %7   == 0 이런 식으로도 만들 수 있음
+// FizzBuzz
+if (score % 35 == 0)                      // %5    %7   == 0 이런 식으로도 만들 수 있음
     console.log('FizzBuzz');
 else if (score % 5 == 0)
     console.log('Fizz');

@@ -12,7 +12,7 @@ console.log(Boolean(0), Boolean(0.0), Boolean(''), Boolean(undefined), Boolean(n
 console.log(123 + true, 'bool' + true, 'integer' + 123);    //integer : 정수라는 뜻!! 꼭 기억할 것!!
 
 // -, *, / 연산자 : string -> number 로 변환
-console.log(52- '27', '8' * 8, '4'/ 2);
+console.log(52 - '27', '8' * 8, '4' / 2);
 
 // 두개의 값이 같으냐?
 // 1) 변환된 값이 같으면 같다. (==)

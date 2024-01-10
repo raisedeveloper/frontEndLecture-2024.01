@@ -20,18 +20,27 @@ for (let i=1; i<10000; i++){ //체크해야할 수
         result.push(sum); // 결과에 완전수 추가
     sum = 0; // 약수 합 초기화
 }
-console.log(result); */ 
+console.log(result); */
 
 //강사님 답
+
+/* let num = 28;
+let sum = 0;
+for (let i = 1; i < 28; i++) {
+    if (num % i == 0)
+        sum += i;
+}
+console.log(sum); * /
+
 for (let i = 2; i <= 10000; i++) {
     let divSum = 0;
     for (let k = 1; k < i; k++) {       // 1에서부터 자기자신 전까지
         if (i % k == 0)                 // 약수의 합 구하기
             divSum += k;
     }
-    if (i == divSum)   
-        console.log(i);                 //이 부분이 완전수 구한 부분
-}
+    if (i == divSum)        // 자기 자신을 제외한 약수의 합과 자기자신이 같으면
+        console.log(i);     // 이 부분이 완전수 구한 부분
+} */
 
 
 
@@ -53,15 +62,49 @@ console.log(answer); */
 
 
 //강사님 답     // a * a + b * b = c * c
-for (let a = 1; a <= 332; a++) {              //a <= 1000 가능
+
+/* for (let a = 1; a <= 332; a++) {            //a <= 1000 가능
     for (let b = a + 1; b <= 500; b++) {    //b <= 1000 가능
         c = 1000 - a - b;
         if (a * a + b * b == c * c) {
             console.log(a, b, c);
-            process.exit(0);                //실행중인 프로그램(ctrl+alt+Tab)을 prcess라고 함_프로세스 종료 라는 뜻
+            process.exit(0);                // 프로그램 실행을 종료 / 실행중인 프로그램(ctrl+alt+Tab)을 prcess라고 함_프로세스 종료 라는 뜻
+        }
+    }
+} */
+//모든 경우의 수를 돌려서 답을 찾아내는 형식임 / 즉, 방정식이 아니라는 뜻
+
+// 1. 완전수(Perfect number)
+// 자기 자신을 제외한 약수의 합과 자기자신이 같은 수
+// 6 = 1 + 2 + 3
+// 28 = 1 + 2 + 4 + 7 + 14
+// 10000 이하의 수 중에서 완전수 4개를 찾으세요.
+/* let num = 28;
+let sum = 0;
+for (let i = 1; i < 28; i++) {
+    if (num % i == 0)
+        sum += i;
+}
+console.log(sum); */
+
+for (let i = 2; i <= 10000; i++) {
+    let divSum = 0;
+    for (let k = 1; k < i; k++) {       // 1에서부터 자기자신 전까지
+        if (i % k == 0)                 // 약수의 합 구하기
+            divSum += k;
+    }
+    if (i == divSum)        // 자기 자신을 제외한 약수의 합과 자기자신이 같으면
+        console.log(i);
+}
+
+// 2. a + b + c = 1000 을 만족하는 피타고라스 수 (단, a < b < c)
+// a * a + b * b = c * c
+for (let a = 1; a <= 332; a++) {
+    for (let b = a + 1; b <= 500; b++) {
+        c = 1000 - a - b;
+        if (a * a + b * b == c * c) {
+            console.log(a, b, c);
+            process.exit(0);                // 프로그램 실행을 종료
         }
     }
 }
-
-//모든 경우의 수를 돌려서 답을 찾아내는 형식 / 방정식이 아니라는 뜻
-//

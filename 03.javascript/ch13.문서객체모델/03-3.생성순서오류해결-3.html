@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성 순서 오류 해결</title>
+    <script>
+        function handler() {
+            document.querySelector('h1').style.backgroundColor = 'yellow';
+            document.querySelector('h2').style.color = 'red';
+        }
+    </script>
+</head>
+
+<body onload="handler()"> <!--괄호가 있어야 함.-->
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+</body>
+
+</html>

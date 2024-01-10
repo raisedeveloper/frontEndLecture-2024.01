@@ -1,23 +1,18 @@
-stdin.on("readable", function scanf(){
-    let stdinBuffer = stdin.read();
-    let stdinNumbers= stdinBuffer.toString().split("");
-    let [H, M] = stdinNumbers.map(input => {
-        return parseInt(input);
-    });
+// 백준도장 2884
+// 알람 시계
+let hour = 6, minute = 40;
+let newHour = 0, newMin = 0;
 
-    M= M-45;
-
-    if(M >= 0){
+if (minute >= 45) {
+    newHour = hour;
+    newMin = minute - 45;
+} else {
+    if (hour == 0) {
+        newHour = 23;
+        newMin = minute + 60 - 45;
+    } else {
+        newHour = hour - 1;
+        newMin = minute + 60 - 45;
     }
-    else if(H == 0) {
-        H = 23;
-        M = 60+M
-    }
-
-    else{
-        H--;
-        M = 60+M
-    }
-    console.log(`${H} ${M}`);
-    stdin.removeListener("readable", scanf);
-});
+}
+console.log(`${hour}시 ${minute}분 --> ${newHour}시 ${newMin}분`);
