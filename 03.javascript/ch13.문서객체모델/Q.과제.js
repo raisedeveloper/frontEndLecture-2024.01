@@ -3,30 +3,30 @@ function square() {
     let num2 = Number(document.getElementById('num2').value);
     if (num1 < 1 || num1 > 20) {
         alert('첫번째 값은 1과 20사이로 지정해주세요.');
-        document.getElementById('num1').value ='';
+        document.getElementById('num1').value = '';
         return;
     }
     if (num2 < 10 || num2 > 30) {
         alert('두번째 값은 10과 30사이로 지정해주세요');
-        document.getElementById('num2').value ='';
+        document.getElementById('num2').value = '';
         return;
     }
     if (num1 + 4 > num2 || num1 > num2) {
         alert('두 정수의 차이는 4이상 나야 하고, 두번째 입력값이 더 커야 합니다.');
-        document.getElementById('num1').value ='';
-        document.getElementById('num2').value ='';
+        document.getElementById('num1').value = '';
+        document.getElementById('num2').value = '';
         return;
     }
     let squareArray = [];
     let answer = 1;
     for (let i = num1; i <= num2; i++) {
-        for (let k = 1; k <= i; k++){
+        for (let k = 1; k <= i; k++) {
             answer *= 2;
         }
         squareArray.push(`2의 ${i}승 : ${answer} <br> `);
         answer = 1;
     }
-        document.getElementById('result').innerHTML = squareArray;
+    document.getElementById('result').innerHTML = squareArray;
 }
 //===================================================================================================
 function checkWords() {
@@ -35,7 +35,7 @@ function checkWords() {
     theFound = theFound.split(' ');
     let count = 0;
 
-    for (let the of theFound){
+    for (let the of theFound) {
         if (the == 'the')
             count++;
     }

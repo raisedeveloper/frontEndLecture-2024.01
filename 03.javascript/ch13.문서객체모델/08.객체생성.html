@@ -20,8 +20,8 @@
         function addNode() {
             const h3 = document.createElement('h3');
             h3.classList.add('class1', 'class2');   // class = "class1 class2"
-        /*  const textNode = document.createTextNode('홍길동');
-            h3.appendChild(textNode);*/
+            /*  const textNode = document.createTextNode('홍길동');
+                h3.appendChild(textNode);*/
             h3.innerHTML = '홍길동' + count++;
             document.getElementById('point').append(h3);
             // append(==appendChild): 뒤쪽으로 집어 넣는다// prepend : 앞쪽으로 집어넣는다. 
