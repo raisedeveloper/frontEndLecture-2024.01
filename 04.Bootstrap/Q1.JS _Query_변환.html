@@ -21,7 +21,8 @@
             a {
                 text-decoration: none;
             }
-            .card-title{
+
+            .card-title {
                 color: lightcoral;
                 font-weight: bolder;
             }
@@ -30,70 +31,80 @@
 
     <body style="margin: 30px;">
         <div class="container mt-5">
-            <div class="row" style="margin: auto; text-align: center; color:white; padding: 50px; background-color: lightcoral;">
+            <div class="row"
+                style="margin: auto; text-align: center; color:white; padding: 50px; background-color: lightcoral;">
                 <h1> Javascript 연습문제 <br></h1>
             </div>
         </div>
 
-        <div class="container mt-5">
-            <div class="row mt-5">
-                <div class="col mt-5">
-                    <div class="card" style="width:500px">
-                        <div class="card-body" style="width: 500px;">
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
                             <h1 class="card-title">Q1. 2의 거듭제곱</h1>
-                            <input type="text" id="num1" class='alert' placeholder="1~20 사이의 정수">
-                            <br>
-                            <input type="text" id="num2" class='alert' placeholder="10~30 사이의 정수">
-                            <br><br>
-                            <a id="fir" class="btn btn-primary">확인</a>
-                            <p class="card-text" id="result1"> </p>
+                            <div class="mb-3 mt-3">
+                                <label for="num1">첫번째 수:</label>
+                                <input type="text" id="num1" class='form-control' placeholder="1~20 사이의 정수">
+                                <br>
+                                <input type="text" id="num2" class='form-control' placeholder="10~30 사이의 정수">
+                                <br><br>
+                                <a id="fir" class="btn btn-primary">확인</a>
+                                <p class="card-text" id="result1"> </p>
+                            </div>
                         </div>
                     </div>
 
                 </div>
-                <div class="col mt-5">
-                    <div class="card" style="width:500px">
-                        <div class="card-body" style="width: 500px;">
-                            <h1 class="card-title">Q2. 특정 단어의 갯수</h1>
-                            <textarea id="sentence" cols="30" rows="5" placeholder="찾고싶은 문장"></textarea><br>
-                            <br>
-                            <input type="text" id="search" placeholder="찾을 단어">
-                            <br><br>
-                            <a id="sec" class="btn btn-primary">확인</a>
-                            <p class="card-text" id="result2"> </p>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Q2. 특정 단어의 갯수</h4>
+                            <div class="mb-3 mt-3">
+                                <label for="num1">문장</label>
+                                <textarea class="form-control" rows="5" id="sentence" placeholder="찾고싶은 문장"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="num1">단어:</label>
+                                <input type="text" class="form-control" id="search" placeholder="찾을 단어">
+                            </div>
+                            <button class="btn btn-primary" onclick="ans2()">확인</button>
+                            <hr>
+                            <div id="result2"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row mt-5">
-                <div class="col mt-5">
-                    <div class="card" style="width:500px">
-                        <div class="card-body" style="width: 500px;">
-                            <h1 class="card-title">Q3. 내림차순 정렬</h1>
-                            <p class="card-text" style="font-size: 15px;">
-                                51900;83000;158000;367500;250000;59200;128500;1304000
-                            </p>
-                            <input type="text" id="price" placeholder="가격을 ;으로 분리해서 입력">
-                            <br><br>
-                            <a id="tir" class="btn btn-primary">확인</a>
-                            <br>
-                            <span id="result3"></span>
-                            </p>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h4 class="card-title">Q3. 내림차순 정렬</h4>
+                        <div class="mb-3 mt-3">
+                            <label for="price">가격:</label>
+                            <input type="text" class="form-control" id="price" placeholder="" 가격을 ;으로 분리해서 입력>
                         </div>
-                    </div>
-                </div>
-                <div class="col mt-5">
-                    <div class="card" style="width:500px">
-                        <div class="card-body" style="width: 500px;">
-                            <h1 class="card-title">Q4. 디지털 시계</h1>
-                            <br><br>
-                            <h2 id="date"></h2>
-                            <br><br>
-                            <h2 id="time"></h2>
-                        </div>
+                        <a id="tir" class="btn btn-primary">확인</a>
+                        <hr>
+                        <div id="result3"></div>
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
+        <div class="col mt-5">
+            <div class="card" style="width:500px">
+                <div class="card-body" style="width: 500px;">
+                    <h1 class="card-title">Q4. 디지털 시계</h1>
+                    <br><br>
+                    <h2 id="date"></h2>
+                    <br><br>
+                    <h2 id="time"></h2>
+                </div>
+            </div>
+        </div>
+        </div>
         </div>
 
     </body>

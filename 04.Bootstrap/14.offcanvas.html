@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap 5 Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fdb840a8cc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   
+    <!-- 위의 코드 'link ~ script 5개'가 기본적으로 구현에 필요-->
+    
+    <script src="earth.png"></script>
+    <style>
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        function showCanvas() {
+            $('#demo').modal('show');
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+        <h1>부스트트랩 페이지</h1>
+        <p>Offcanvas</p>
+</div>
+        <div class="offcanvas offcanvas-end" id="demo">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title">profile</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <img src="earth.png" class="rounded-circle">
+                <p>오늘은 즐거운 회식날</p>
+                <p><i class="fa-regular fa-envelope"></i>ilove4903@naver.com</p>
+                <p><i class="fa-solid fa-location-dot">팔달구 인계동</i></p>
+                <p><i class="fa-brands fa-github"></i> github-id</p>
+                <p><i class="fa-brands fa-square-instagram"></i></p>
+                <button class="fa-brands fa-instagram" type="button">A Button</button>
+            </div>
+            </div>
+            </div>
+ 
+    <div class="container mt-3"></div>
+    <h3>Offcanvas Sidebar</h3>
+    <p>Offcanvas is similar to modals, except that it is often used as a sidebar.</p>
+    <button class="btn btn-primary me-3" type="button" data-bs-target="#demo" data-bs-toggle="offcanvas">
+        Open Offcanvas Sidebar
+    </button>
+    <a data-bs-toggle="offcanvas" href="#demo"><i class="fa-solid fa-bars"></i></a>
+</body>
+
+</html>
