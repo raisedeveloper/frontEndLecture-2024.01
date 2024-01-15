@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Date Time</title>
+  <script>
+    function twoDigit(num) {
+        return (num < 10) ? '0' + num : String(num);
+    }
+    function myDateTime(date) {
+        return `${date.getFullYear()}-${twoDigit(date.getMonth() + 1)}-${twoDigit(date.getDate())} ` +
+            `${twoDigit(date.getHours())}:${twoDigit(date.getMinutes())}:${twoDigit(date.getSeconds())}`;
+    }
+    window.onload = function () {
+        setInterval(function () {
+            const now = new Date();
+            const week = '일월화수목금토'.split('');
+            let dateStr = myDateTime(now).substring(0, 10);
+            dateStr += '(' + week[now.getDay()] + ')';
+            const timeStr = myDateTime(now).substring(10);
+            document.getElementById('datetime').innerHTML = dateStr + timeStr;
+        }, 1000);
+    }
+</Script>
+</head>
+<body style="margin: 50px">
+  <h1 id="datetime"></h1>
+</body>
+</html>

@@ -9,21 +9,6 @@
 
     <title>Auto Focus</title>
     <script>
-                 /* window.onload = function () {
-                    let input1 = document.querySelectorAll('input')[0];
-                    let input2 = document.querySelectorAll('input')[1];
-        
-                    input1.onkeyup = function (e) {     // 생년월일을 치면 자동으로 뒤로 넘어감
-                        if (input1.value.length >= 6)
-                            input2.focus();
-                    }
-                    input2.onkeyup = function (e) {     // 뒷자리를 다 지우면 다시 앞부분으로 넘어갈 수 있게 함
-                        if (e.keyCode == 8 && input2.value.length == 0)
-                            input1.focus();
-        
-                    }
-                } */
-                
          $(document).ready(() => {
             let input1 = $('input').get(0);
             let input2 = $('input').get(1);
